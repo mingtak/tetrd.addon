@@ -1,0 +1,5 @@
+====================
+tetrd.addon
+====================
+
+User documentation

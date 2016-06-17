@@ -1,0 +1,33 @@
+<?python
+from plone import api
+portal = api.portal.get()
+heros = portal['resource']['heros'].getChildNodes()
+?>
+
+<div id="mainnavigation-wrapper" tal:condition="python:context.Type() == 'Plone Site'">
+  <div id="mainnavigation">
+
+
+<img tal:attributes="src python:heros[0].absolute_url()" style="width:100%; margin:auto; display:block;"/>
+<!--
+    <div class="owl-carousel">
+      <div tal:repeat="hero heros">
+        <img tal:attributes="src hero/absolute_url" />
+      </div>
+    </div>
+-->
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    animateOut: 'fadeOut',
+    animateIn: 'flipInX',
+    items:1,
+    margin:30,
+    stagePadding:30,
+    smartSpeed:450
+});
+});
+</script>

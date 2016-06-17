@@ -1,0 +1,36 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="tetrd.addon">
+
+    <browser:viewlet
+      name="banner"
+      for="*"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+      template="template/banner.pt"
+      class=".viewlet.Banner"
+      permission="zope2.View"
+      />
+
+<!--
+    <browser:viewlet
+      name="headlinks"
+      for="*"
+      manager="plone.app.layout.viewlets.interfaces.IHtmlHeadLinks"
+      template="template/headlinks.pt"
+      class=".viewlet.HeadLinks"
+      permission="zope2.View"
+      />
+
+    <browser:viewlet
+      name="heros"
+      for="*"
+      manager="plone.app.layout.viewlets.interfaces.IMainNavigation"
+      template="template/heros.pt"
+      class=".viewlet.Heros"
+      permission="zope2.View"
+      />
+-->
+
+</configure>

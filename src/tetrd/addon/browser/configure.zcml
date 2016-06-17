@@ -1,0 +1,38 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="tetrd.addon">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="overrides"
+      layer="tetrd.addon.interfaces.ITetrdAddonLayer"
+      />
+
+  <!-- Publish static files -->
+  <browser:resourceDirectory
+      name="tetrd.addon"
+      directory="static"
+      />
+
+
+  <!-- browser view -->
+  <browser:page
+      name="cover_view"
+      for="tetrd.addon.interfaces.ICover"
+      class=".views.CoverView"
+      template="template/cover_view.pt"
+      permission="zope2.View"
+  />
+
+  <!-- configlet -->
+  <browser:page
+    name="siteSettingControlPanel"
+    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    permission="cmf.ManagePortal"
+    class=".siteSetting.SiteSettingControlPanelView"
+  />
+
+</configure>

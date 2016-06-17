@@ -1,0 +1,10 @@
+    <section class="row page-header"
+             tal:condition="python:context.Type() != 'Cover'"
+             style="url(http://104.199.136.137:8401/tetrd/resource/images/image.jpg/@@images/image) no-repeat scroll center top;">
+
+        <div class="container">
+
+            <h4 tal:content="context/title">faq</h4>
+
+        </div>
+    </section>

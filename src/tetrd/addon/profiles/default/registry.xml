@@ -1,0 +1,3 @@
+<registry>
+  <records interface="tetrd.addon.browser.siteSetting.ISiteSetting" />
+</registry>
