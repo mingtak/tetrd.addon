@@ -18,7 +18,7 @@
 
 
                 <div class="row">
-                    <div class="col-sm-9">
+                    <div class="col-sm-8">
 
 <!-- Title and Description -->
             <metal:title define-slot="content-title">
@@ -68,8 +68,8 @@
 
 
                     </div>
-                    <div class="col-sm-3 sidebar post-sidebar">
-                      <p>Vivamus purus odio, mollis ut sagittis vel, feugiat et nulla. posuere cubilia Curae; Praesent eu lacus diam. Vestibulum ut s$
+                    <div class="col-sm-4 sidebar post-sidebar">
+ <tal:block replace="structure provider:plone.rightcolumn" />
                     </div>
 
 

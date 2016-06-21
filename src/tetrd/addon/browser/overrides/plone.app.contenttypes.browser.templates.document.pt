@@ -17,7 +17,7 @@
 
             <div class="column-block">
                 <div class="row">
-                    <div class="col-sm-9">
+                    <div class="col-sm-8">
 
 
 <!-- Title and Description -->
@@ -49,8 +49,8 @@
 
 
                     </div>
-                    <div class="col-sm-3">
-                      <p>Vivamus purus odio, mollis ut sagittis vel, feugiat et nulla. posuere cubilia Curae; Praesent eu lacus diam. Vestibulum ut sem odio, eu sollicitudin tellus.Vivamus purus odio, mollis ut sagittis vel, feugiat et nulla. posuere cubilia aeseut sem odio, eu sollicitudin tellus.Vivamus purus odio, mollis ut sagittis vel, feugiat et nulla. posuere cubilia Curae; Praesent eu lacus diam. Vestibulum ut sem odio, eu sollicitudin tellus.</p>
+                    <div class="col-sm-4">
+ <tal:block replace="structure provider:plone.rightcolumn" />
                     </div>
                 </div>
             </div>
